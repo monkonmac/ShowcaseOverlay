@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="360dp">
+
+    <com.monkwithmac.msk.walkthroughapp.CustomGuideView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    <ImageView android:id="@+id/image_container"
+               android:layout_width="match_parent"
+               android:layout_height="300dp"/>
+</LinearLayout>

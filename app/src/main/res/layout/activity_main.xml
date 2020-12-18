@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <EditText android:id="@+id/et"
+              android:layout_width="match_parent"
+              android:layout_above="@id/textView"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:layout_height="50dp"/>
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="#DD00DD"
+            android:layout_centerInParent="true"
+            android:text="Hello World!"/>
+
+
+    <TextView
+            android:id="@+id/textViewRound"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundbg"
+            android:text="Hello World!"/>
+
+    <TextView
+            android:id="@+id/textViewDummy"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/textViewRound"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@drawable/roundbg"
+            android:layout_centerHorizontal="true"
+            android:text="Hidden View"/>
+
+    <Button android:id="@+id/resetView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset V1"/>
+
+    <Button android:id="@+id/resetView2"
+            android:layout_toEndOf="@id/resetView1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset V2"/>
+
+    <Button android:id="@+id/resetView3"
+            android:layout_toEndOf="@id/resetView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset V3"/>
+
+    <Button android:id="@+id/resetView4"
+            android:layout_toEndOf="@id/resetView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset V4"/>
+
+    <Button android:id="@+id/resetView5"
+            android:layout_below="@id/resetView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset V5"/>
+
+    <Button android:id="@+id/resetView6"
+            android:layout_below="@id/resetView2"
+            android:layout_toEndOf="@id/resetView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset V6"/>
+</RelativeLayout>
